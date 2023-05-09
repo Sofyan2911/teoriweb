@@ -48,6 +48,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             ['label' => 'Delete', 'url' => ['/daftar-matakuliah/delete']],
             ['label' => 'Profil', 'url' => ['/mahasiswa/profil']],
             ['label' => 'Data Matakuliah', 'url' => ['/data-matakuliah/riwayat-krs']],
+            ['label' => 'Product', 'url' => ['/product/productsof']],
+
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
