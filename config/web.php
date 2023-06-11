@@ -58,6 +58,7 @@ $config = [
                     'baseUrl' => '@web',
                     'js' => [
                         'template/js/jquery.min.js',
+
                     ]
                 ],
                 'yii\bootstrap5\BootstrapAsset' => [

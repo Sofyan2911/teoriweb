@@ -25,12 +25,21 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
 <div class="container-xxl bg-white p-0">
+
+ <!-- Spinner Start -->
+ <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div> -->
+        <!-- Spinner End -->
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0" id="home">
@@ -44,7 +53,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="<?=Url::to(['site/index'])?>" class="nav-item nav-link active">Home</a>
                         <a href="<?=Url::to(['mahasiswa024/index'])?>" class="nav-item nav-link active">Mahasiswa</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
