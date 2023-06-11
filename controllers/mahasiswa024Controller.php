@@ -21,9 +21,9 @@ class Mahasiswa024Controller extends \yii\web\Controller
     {
         $mahasiswa024 = new Mahasiswa024;
        // $mahasiswa024->id = '1';
-        $mahasiswa024->Nim024 = '60200121024'.rand(100,999);
+        $mahasiswa024->Nim024 = '60200121024'.'-'.rand(100,999);
         $mahasiswa024->Nama024 = 'sofyan';
-        $mahasiswa024->Kelas024 = 'A';
+        $mahasiswa024->Kelas024 = 'D';
         $mahasiswa024->Status024 = 'baru';
         if ($mahasiswa024->save()) {
             Yii::$app->session->setFlash('success', 'Data Tersimpan');
@@ -37,7 +37,7 @@ class Mahasiswa024Controller extends \yii\web\Controller
     {
         $mahasiswa024 = Mahasiswa024::findOne(['Id024' => $id]);
         if ($mahasiswa024 !== null) {
-            $mahasiswa024->Kelas024 = 'B';
+            $mahasiswa024->Kelas024 = 'D';
             $mahasiswa024->Status024 = 'Update';
             $mahasiswa024->save();
             Yii::$app->session->setFlash('success', 'Data Terupdate');

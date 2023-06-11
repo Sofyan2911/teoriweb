@@ -50,6 +50,27 @@ $config = [
             ],
         ],
         
+        'assetManager' => [
+            'bundles' => [
+                'yii/web/JqueryAsset' => [
+                    "sourcePath" => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js' => [
+                        'template/js/jquery.min.js',
+                    ]
+                ],
+                'yii\bootstrap5\BootstrapAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'css' => [
+                        'template/css/bootstrap.min.css'
+                    ],
+                ],
+            ],
+        ],
+        
     ],
     'params' => $params,
 ];
@@ -69,6 +90,10 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+
 }
 
 return $config;
+
+
+
