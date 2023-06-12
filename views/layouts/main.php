@@ -73,7 +73,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                             </div>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="img/hero.jpg" alt="">
+                            <img class="img-fluid rounded animated zoomIn" src="<?= url::to(['template/img/hero.jpg'])?>" alt="">
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                         <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Read More</a>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="<?= url::to(['template/img/about.jpg'])?>">
                     </div>
                 </div>
             </div>
